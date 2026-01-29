@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zyrel | Personal Profile</title>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Photo</title>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+body {
+    margin: 0;
+    font-family: 'quicksand';sans-serif
+    background: grey ;(to right, grey, yellow);
+    color: black;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/* Menu Buttons */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.menu button {
+    background: darkseagreen;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background: maroon;
+    transform: scale(1.1);
+}
+
+/* Content Box */
+.box {
+    display: none;
+    background: rgba(0,0,0,0.4);
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 700px;
+    border-radius: 20px;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Close Button */
+.close {
+    background: gray;
+    border: none;
+    color: darkgrey;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1> Hi, I'm Zyrel</h1>
+<p>click the buttons to know me better</p>
+</header>
+
+<!-- Buttons -->
+<div class="menu">
+
+<button onclick="openBox('about')">🌟 I am</button>
+<button onclick="openBox('skills')">💡 skills</button>
+<button onclick="openBox('hobbies')">🎨 hobbies</button>
+<button onclick="openBox('goals')">🚀 goals</button>
+<button onclick="openBox('contact')">📩 contact</button>
+
+</div>
+
+<!-- About -->
+<div class="box" id="about">
+<button class="close" onclick="closeBox()">X</button>
+
+<h2>🌟 About Me</h2>
+<p>
+I am a jolly, optimistic, and determined person.
+I love spreading positive vibes and never give up on my dreams. I love hanging out with my friends and families. I go to church often.
+</p>
+</div>
+
+<!-- Skills -->
+<div class="box" id="skills">
+<button class="close" onclick="closeBox()">X</button>
+
+<h2>💡 Skills</h2>
+<ul>
+<li>Good Communication</li>
+<li>Singing</li>
+<li>Teamwork</li>
+<li>Leadership</li>
+<li>Time Management</li>
+</ul>
+</div>
+
+<!-- Hobbies -->
+<div class="box" id="hobbies">
+<button class="close" onclick="closeBox()">X</button>
+
+<h2>🎨 Hobbies</h2>
+<ul>
+<li>🎧 Listening to Music</li>
+<li>🎬 Watching Movies</li>
+<li>🎤 Singing</li>
+<li>🍳Cooking</li>
+<li>✍️ Writing</li>
+</ul>
+</div>
+
+<!-- Goals -->
+<div class="box" id="goals">
+<button class="close" onclick="closeBox()">X</button>
+
+<h2>🚀 Goals</h2>
+<p>
+To become successful, help my family,
+and inspire others with my positive attitude. 
+</p>
+</div>
+
+<!-- Contact -->
+<div class="box" id="contact">
+<button class="close" onclick="closeBox()">X</button>
+
+<h2>📩 Contact Me</h2>
+<p>Email: zyrellanang@gmail.com</p>
+<p>Facebook:zyrel lanang</p>
+</div>
+
+<footer>
+<p>© 2026 Zyrel Lanang | Personal Profile</p>
+</footer>
+
+<script>
+function openBox(id) {
+
+  // Close all boxes first
+  let boxes = document.querySelectorAll(".box");
+  boxes.forEach(box => box.style.display = "none");
+
+  // Open selected box
+  document.getElementById(id).style.display = "block";
+}
+
+function closeBox() {
+  let boxes = document.querySelectorAll(".box");
+  boxes.forEach(box => box.style.display = "none");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
